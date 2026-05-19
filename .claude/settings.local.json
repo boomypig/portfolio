@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(wsl --cd /home/boomy/portfolio -e bash -lc \"node -v && npm -v\")",
+      "Bash(wsl -l -v)",
+      "Bash(wsl -d ubuntu -e bash -lc \"whoami; ls /home; ls ~/portfolio 2>&1 | head\")"
+    ]
+  }
+}
