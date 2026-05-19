@@ -7,11 +7,10 @@ export default function Work() {
     <>
       <section className="shell pt-20 pb-16 md:pt-28">
         <h1 className="editorial text-5xl text-on-surface md:text-6xl">
-          Selected Works
+          Projects
         </h1>
         <p className="mt-6 max-w-xl text-on-surface-variant">
-          A curated collection of full-stack and machine learning projects,
-          combining rigorous engineering with clean, considered interfaces.
+          A collection of full-stack and machine learning projects showcasing my engineering skills.
         </p>
       </section>
 

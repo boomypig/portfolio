@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { profile, stats, projects } from '../data/content.js'
 import SectionLabel from '../components/SectionLabel.jsx'
 import Tag from '../components/Tag.jsx'
+import Timeline from '../components/Timeline.jsx'
 
 export default function Home() {
   const featured = projects[0]
@@ -71,6 +72,13 @@ export default function Home() {
           <p className="border-outline-variant/40 text-on-surface-variant md:border-l md:pl-12">
             {profile.shortBio}
           </p>
+        </div>
+      </section>
+
+      <section className="border-t border-outline-variant/30">
+        <div className="shell py-20">
+          <SectionLabel>// Journey</SectionLabel>
+          <Timeline />
         </div>
       </section>
     </>

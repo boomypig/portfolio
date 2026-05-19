@@ -9,7 +9,7 @@ export const profile = {
   intro:
     'Computer Science student at Utah Tech University building full-stack web applications and machine learning systems. I care about clean data modeling, secure authentication, and interfaces that stay out of the way.',
   shortBio:
-    'Currently studying Computer Science at Utah Tech University and working as an IT Help Desk Technician supporting 5,000+ users. Honors student focused on full-stack engineering and applied machine learning.',
+    'Just completed my Computer Science degree at Utah Tech University and working as an IT Help Desk Technician supporting 5,000+ users. Honors student focused on full-stack engineering and applied machine learning.',
   location: 'St. George, UT',
   email: 'brainalexis119@gmail.com',
   phone: '(435) 272-6058',
@@ -23,7 +23,7 @@ export const profile = {
 export const stats = [
   { value: '3+', label: 'Projects Shipped' },
   { value: '5,000+', label: 'Users Supported' },
-  { value: '2026', label: 'Expected Graduation' },
+  { value: '2026', label: 'Graduated' },
 ]
 
 export const projects = [
@@ -103,7 +103,7 @@ export const arsenal = [
   {
     title: 'Core Languages',
     blurb: 'The foundational syntax that powers the logic and structure of my applications.',
-    items: ['Python', 'JavaScript', 'TypeScript', 'C++'],
+    items: ['Python', 'JavaScript', 'TypeScript', 'SQL'],
   },
   {
     title: 'Frontend',
@@ -117,9 +117,51 @@ export const arsenal = [
   },
 ]
 
+// Reverse-chronological milestones for the About page timeline.
+// The first entry is the "current" block (highlighted).
+export const timeline = [
+  {
+    status: 'Present',
+    title: 'B.S. Computer Science — Graduated',
+    detail: "Utah Tech University · President's & Dean's List honors",
+    date: 'May 2026',
+    current: true,
+  },
+  {
+    status: 'Shipped',
+    title: 'SEC Form-4 Insider Trading Tracker',
+    detail: 'React · TypeScript · PostgreSQL · JWT auth',
+    date: 'May 2026',
+  },
+  {
+    status: 'Shipped',
+    title: 'Spotify Song Recommendation System',
+    detail: 'Python · scikit-learn · ~30K records',
+    date: 'Apr 2026',
+  },
+  {
+    status: 'Shipped',
+    title: 'Disclist Music Management Web App',
+    detail: 'Node.js · Express · AWS S3',
+    date: 'Mar 2025',
+  },
+  {
+    status: 'Role',
+    title: 'IT Help Desk Technician',
+    detail: 'Utah Tech University · supporting 5,000+ users',
+    date: 'Aug 2024',
+  },
+  {
+    status: 'Started',
+    title: 'Began B.S. Computer Science',
+    detail: 'Utah Tech University · St. George, UT',
+    date: 'Aug 2022',
+  },
+]
+
 export const nav = [
-  { label: 'Work', to: '/work' },
-  { label: 'Expertise', to: '/expertise' },
   { label: 'About', to: '/' },
+  { label: 'Projects', to: '/work' },
+  { label: 'Expertise', to: '/expertise' },
   { label: 'Contact', to: '/contact' },
 ]
