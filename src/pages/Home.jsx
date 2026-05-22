@@ -11,9 +11,9 @@ export default function Home() {
     <>
       <section className="shell pt-20 pb-24 md:pt-28 md:pb-32">
         <SectionLabel>{profile.title}</SectionLabel>
-        <h1 className="editorial mt-6 max-w-4xl text-5xl leading-[1.05] text-on-surface md:text-7xl">
+        <h1 className="editorial mt-6 max-w-4xl text-5xl leading-[1.05] text-on-surface md:text-4xl">
           {profile.tagline[0]}{' '}
-          <span className="italic text-primary">{profile.tagline[1]}</span>{' '}
+          <span className="text-primary">{profile.tagline[1]}</span>{' '}
           {profile.tagline[2]}
         </h1>
         <p className="mt-8 max-w-xl text-on-surface-variant">{profile.intro}</p>
@@ -23,7 +23,7 @@ export default function Home() {
             to="/work"
             className="rounded bg-primary-container px-6 py-3 text-xs font-semibold uppercase tracking-[0.08em] text-on-primary transition-opacity hover:opacity-90"
           >
-            View Work
+            View Projects
           </Link>
           <Link
             to="/contact"
@@ -36,7 +36,7 @@ export default function Home() {
 
       <section className="shell pb-24">
         <Link
-          to="/work"
+          to="/projects"
           className="group relative block overflow-hidden rounded border border-outline-variant/40"
         >
           <div className="aspect-[16/7] w-full bg-gradient-to-br from-surface-high via-surface-container to-surface-lowest" />

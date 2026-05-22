@@ -2,7 +2,7 @@ import { profile, projects } from '../data/content.js'
 import SectionLabel from '../components/SectionLabel.jsx'
 import Tag from '../components/Tag.jsx'
 
-export default function Work() {
+export default function Projects() {
   return (
     <>
       <section className="shell pt-20 pb-16 md:pt-28">

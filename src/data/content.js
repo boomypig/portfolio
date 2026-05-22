@@ -4,10 +4,10 @@
 export const profile = {
   name: 'Bryan Lopez Rosales',
   wordmark: 'BRYAN LOPEZ',
-  title: 'Computer Science Student & Full-Stack Developer',
-  tagline: ['Crafting full-stack systems', 'with rigorous', 'engineering.'],
+  title: 'Full-Stack Developer',
+  tagline: ["I'm a passionate developer with a deep interest in", 'technology ', ' and all things related to computing.'],
   intro:
-    'Computer Science student at Utah Tech University building full-stack web applications and machine learning systems. I care about clean data modeling, secure authentication, and interfaces that stay out of the way.',
+    "Over the years, I've dedicated myself creating variety of personal projects, I've been driven by my passion for learning and exploring new technologies.I'm proficient in full-stack development and in practice to get better with Machine Learning. ",
   shortBio:
     'Just completed my Computer Science degree at Utah Tech University and working as an IT Help Desk Technician supporting 5,000+ users. Honors student focused on full-stack engineering and applied machine learning.',
   location: 'St. George, UT',
@@ -161,7 +161,6 @@ export const timeline = [
 
 export const nav = [
   { label: 'About', to: '/' },
-  { label: 'Projects', to: '/work' },
+  { label: 'Projects', to: '/projects' },
   { label: 'Expertise', to: '/expertise' },
-  { label: 'Contact', to: '/contact' },
 ]

@@ -37,7 +37,7 @@ export default function Header() {
             to="/contact"
             className="rounded bg-primary-container px-5 py-2.5 text-xs font-semibold uppercase tracking-[0.08em] text-on-primary transition-opacity hover:opacity-90"
           >
-            Hire Me
+            Contact Me
           </Link>
         </div>
 
@@ -73,13 +73,6 @@ export default function Header() {
                 {item.label}
               </NavLink>
             ))}
-            <Link
-              to="/contact"
-              onClick={() => setOpen(false)}
-              className="mt-2 rounded bg-primary-container px-5 py-2.5 text-center text-xs font-semibold uppercase tracking-[0.08em] text-on-primary"
-            >
-              Hire Me
-            </Link>
           </div>
         </nav>
       )}

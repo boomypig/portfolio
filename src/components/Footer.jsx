@@ -15,9 +15,6 @@ export default function Footer() {
           <Link to="/" className="editorial text-2xl tracking-tight text-on-surface">
             {profile.wordmark}
           </Link>
-          <p className="mt-4 text-sm text-on-surface-variant">
-            Crafting full-stack systems through rigorous engineering and clean design.
-          </p>
         </div>
 
         <div className="flex flex-col gap-6 md:items-end">

@@ -9,7 +9,7 @@ export default function Contact() {
   return (
     <section className="shell flex min-h-[70vh] flex-col items-center justify-center py-28 text-center">
       <h1 className="editorial text-5xl text-on-surface md:text-7xl">
-        Ready to collaborate?
+        Get in Contact!
       </h1>
       <p className="mt-8 max-w-md text-on-surface-variant">
         I'm currently open to internships and new opportunities — happy to talk
