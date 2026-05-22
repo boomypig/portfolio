@@ -5,18 +5,13 @@ import Tag from '../components/Tag.jsx'
 export default function Expertise() {
   return (
     <>
-      <section className="shell pt-20 pb-20 md:pt-28">
-        <h1 className="editorial max-w-3xl text-5xl leading-[1.1] text-on-surface md:text-6xl">
-          Crafting full-stack systems through{' '}
-          <span className="italic text-primary">rigorous</span> engineering.
+      <section className="shell pt-20 pb-15 md:pt-15">
+        <h1 className="editorial max-w-3xl text-5xl leading-[1.1] text-on-surface md:text-4xl">
+          A chronicle of my technical journey the work, the study, and the tools I reach for.
         </h1>
-        <p className="mt-8 max-w-xl text-on-surface-variant">
-          A chronicle of my technical journey — the work, the study, and the
-          tools I reach for.
-        </p>
       </section>
 
-      <section className="shell pb-24">
+      <section className="shell pb-15">
         <SectionLabel>// Professional History</SectionLabel>
         <div className="mt-10 divide-y divide-outline-variant/30 border-y border-outline-variant/30">
           {experience.map((e) => (
@@ -57,11 +52,7 @@ export default function Expertise() {
       </section>
 
       <section className="shell pb-28">
-        <SectionLabel>// Technical Arsenal</SectionLabel>
-        <p className="mt-4 max-w-xl text-on-surface-variant">
-          A curated selection of technologies I leverage to build robust,
-          scalable, and aesthetically considered products.
-        </p>
+        <SectionLabel>// Technical Tools</SectionLabel>
         <div className="mt-12 grid gap-px overflow-hidden rounded border border-outline-variant/40 bg-outline-variant/30 md:grid-cols-3">
           {arsenal.map((a) => (
             <div key={a.title} className="bg-surface-container p-8 md:p-10">

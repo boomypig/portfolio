@@ -9,7 +9,7 @@ export default function Home() {
 
   return (
     <>
-      <section className="shell pt-20 pb-24 md:pt-28 md:pb-32">
+      <section className="shell pt-20 pb-24 md:pt-15 md:pb-22">
         <SectionLabel>{profile.title}</SectionLabel>
         <h1 className="editorial mt-6 max-w-4xl text-5xl leading-[1.05] text-on-surface md:text-4xl">
           {profile.tagline[0]}{' '}
@@ -20,7 +20,7 @@ export default function Home() {
 
         <div className="mt-10 flex flex-wrap gap-4">
           <Link
-            to="/work"
+            to="/projects"
             className="rounded bg-primary-container px-6 py-3 text-xs font-semibold uppercase tracking-[0.08em] text-on-primary transition-opacity hover:opacity-90"
           >
             View Projects
@@ -35,6 +35,9 @@ export default function Home() {
       </section>
 
       <section className="shell pb-24">
+        <h1 className="editorial text-5xl text-on-surface md:text-5xl pb-12">
+        Most Recent Project
+        </h1>
         <Link
           to="/projects"
           className="group relative block overflow-hidden rounded border border-outline-variant/40"
