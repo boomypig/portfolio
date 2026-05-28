@@ -1,18 +1,21 @@
-import { Link } from 'react-router-dom'
-import { profile } from '../data/content.js'
+import { Link } from "react-router-dom";
+import { profile } from "../data/content.js";
 
 const social = [
-  { label: 'LinkedIn', href: profile.links.linkedin },
-  { label: 'GitHub', href: profile.links.github },
-  { label: 'Email', href: profile.links.email },
-]
+  { label: "LinkedIn", href: profile.links.linkedin },
+  { label: "GitHub", href: profile.links.github },
+  { label: "Email", href: profile.links.email },
+];
 
 export default function Footer() {
   return (
     <footer className="border-t border-outline-variant/30">
       <div className="shell flex flex-col gap-10 py-16 md:flex-row md:items-start md:justify-between">
         <div className="max-w-xs">
-          <Link to="/" className="editorial text-2xl tracking-tight text-on-surface">
+          <Link
+            to="/"
+            className="editorial text-2xl tracking-tight text-on-surface"
+          >
             {profile.wordmark}
           </Link>
         </div>
@@ -23,7 +26,7 @@ export default function Footer() {
               <li key={s.label}>
                 <a
                   href={s.href}
-                  target={s.href.startsWith('http') ? '_blank' : undefined}
+                  target={s.href.startsWith("http") ? "_blank" : undefined}
                   rel="noreferrer"
                   className="text-sm text-primary transition-opacity hover:opacity-70"
                 >
@@ -38,5 +41,5 @@ export default function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }

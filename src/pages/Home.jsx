@@ -1,19 +1,19 @@
-import { Link } from 'react-router-dom'
-import { profile, stats, projects } from '../data/content.js'
-import SectionLabel from '../components/SectionLabel.jsx'
-import Tag from '../components/Tag.jsx'
-import Timeline from '../components/Timeline.jsx'
+import { Link } from "react-router-dom";
+import { profile, stats, projects } from "../data/content.js";
+import SectionLabel from "../components/SectionLabel.jsx";
+import Tag from "../components/Tag.jsx";
+import Timeline from "../components/Timeline.jsx";
 
 export default function Home() {
-  const featured = projects[0]
+  const featured = projects[0];
 
   return (
     <>
       <section className="shell pt-20 pb-24 md:pt-15 md:pb-22">
         <SectionLabel>{profile.title}</SectionLabel>
         <h1 className="editorial mt-6 max-w-4xl text-5xl leading-[1.05] text-on-surface md:text-4xl">
-          {profile.tagline[0]}{' '}
-          <span className="text-primary">{profile.tagline[1]}</span>{' '}
+          {profile.tagline[0]}{" "}
+          <span className="text-primary">{profile.tagline[1]}</span>{" "}
           {profile.tagline[2]}
         </h1>
         <p className="mt-8 max-w-xl text-on-surface-variant">{profile.intro}</p>
@@ -36,7 +36,7 @@ export default function Home() {
 
       <section className="shell pb-24">
         <h1 className="editorial text-5xl text-on-surface md:text-5xl pb-12">
-        Most Recent Project
+          Most Recent Project
         </h1>
         <Link
           to="/projects"
@@ -85,5 +85,5 @@ export default function Home() {
         </div>
       </section>
     </>
-  )
+  );
 }

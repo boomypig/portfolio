@@ -1,10 +1,10 @@
-import { timeline } from '../data/content.js'
+import { timeline } from "../data/content.js";
 
 export default function Timeline() {
   return (
     <ol className="mt-12">
       {timeline.map((item, i) => {
-        const last = i === timeline.length - 1
+        const last = i === timeline.length - 1;
         return (
           <li
             key={item.title + item.date}
@@ -13,7 +13,7 @@ export default function Timeline() {
             {/* left: status label */}
             <span
               className={`pt-px text-right text-[11px] font-semibold uppercase tracking-[0.08em] ${
-                item.current ? 'text-primary' : 'text-outline'
+                item.current ? "text-primary" : "text-outline"
               }`}
             >
               {item.status}
@@ -24,8 +24,8 @@ export default function Timeline() {
               <span
                 className={`z-10 mt-1.5 h-2.5 w-2.5 rounded-full ${
                   item.current
-                    ? 'bg-primary ring-4 ring-primary/15'
-                    : 'border border-outline bg-surface'
+                    ? "bg-primary ring-4 ring-primary/15"
+                    : "border border-outline bg-surface"
                 }`}
               />
               {!last && (
@@ -34,10 +34,10 @@ export default function Timeline() {
             </span>
 
             {/* content */}
-            <div className={last ? 'pb-1' : 'pb-10'}>
+            <div className={last ? "pb-1" : "pb-10"}>
               <h3
                 className={`editorial text-xl md:text-2xl ${
-                  item.current ? 'text-on-surface' : 'text-on-surface'
+                  item.current ? "text-on-surface" : "text-on-surface"
                 }`}
               >
                 {item.title}
@@ -52,8 +52,8 @@ export default function Timeline() {
               {item.date}
             </span>
           </li>
-        )
+        );
       })}
     </ol>
-  )
+  );
 }

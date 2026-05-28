@@ -1,6 +1,6 @@
-import { profile, projects } from '../data/content.js'
-import SectionLabel from '../components/SectionLabel.jsx'
-import Tag from '../components/Tag.jsx'
+import { profile, projects } from "../data/content.js";
+import SectionLabel from "../components/SectionLabel.jsx";
+import Tag from "../components/Tag.jsx";
 
 export default function Projects() {
   return (
@@ -10,7 +10,8 @@ export default function Projects() {
           Projects
         </h1>
         <p className="mt-6 max-w-xl text-on-surface-variant">
-          A collection of full-stack and machine learning projects showcasing my engineering skills.
+          A collection of full-stack and machine learning projects showcasing my
+          engineering skills.
         </p>
       </section>
 
@@ -20,12 +21,12 @@ export default function Projects() {
             <article
               key={p.slug}
               className={`flex flex-col bg-surface-container p-8 md:p-10 ${
-                i === 0 ? 'sm:col-span-2' : ''
+                i === 0 ? "sm:col-span-2" : ""
               }`}
             >
               <div
                 className={`mb-8 rounded bg-gradient-to-br from-surface-high via-surface-container to-surface-lowest ${
-                  i === 0 ? 'aspect-[16/6]' : 'aspect-[16/9]'
+                  i === 0 ? "aspect-[16/6]" : "aspect-[16/9]"
                 }`}
               />
               <SectionLabel>{p.category}</SectionLabel>
@@ -50,7 +51,7 @@ export default function Projects() {
         </div>
 
         <p className="mt-12 text-center text-sm text-on-surface-variant">
-          More projects on{' '}
+          More projects on{" "}
           <a
             href={profile.links.github}
             target="_blank"
@@ -63,5 +64,5 @@ export default function Projects() {
         </p>
       </section>
     </>
-  )
+  );
 }

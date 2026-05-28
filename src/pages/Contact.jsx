@@ -1,9 +1,9 @@
-import { profile } from '../data/content.js'
+import { profile } from "../data/content.js";
 
 const social = [
-  { label: 'GitHub', href: profile.links.github },
-  { label: 'LinkedIn', href: profile.links.linkedin },
-]
+  { label: "GitHub", href: profile.links.github },
+  { label: "LinkedIn", href: profile.links.linkedin },
+];
 
 export default function Contact() {
   return (
@@ -60,5 +60,5 @@ export default function Contact() {
         ))}
       </div>
     </section>
-  )
+  );
 }

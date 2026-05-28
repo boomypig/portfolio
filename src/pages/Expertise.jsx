@@ -1,13 +1,14 @@
-import { experience, arsenal } from '../data/content.js'
-import SectionLabel from '../components/SectionLabel.jsx'
-import Tag from '../components/Tag.jsx'
+import { experience, arsenal } from "../data/content.js";
+import SectionLabel from "../components/SectionLabel.jsx";
+import Tag from "../components/Tag.jsx";
 
 export default function Expertise() {
   return (
     <>
       <section className="shell pt-20 pb-15 md:pt-15">
         <h1 className="editorial max-w-3xl text-5xl leading-[1.1] text-on-surface md:text-4xl">
-          A chronicle of my technical journey the work, the study, and the tools I reach for.
+          A chronicle of my technical journey the work, the study, and the tools
+          I reach for.
         </h1>
       </section>
 
@@ -73,5 +74,5 @@ export default function Expertise() {
         </div>
       </section>
     </>
-  )
+  );
 }

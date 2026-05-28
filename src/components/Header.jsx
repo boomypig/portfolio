@@ -1,17 +1,17 @@
-import { useState } from 'react'
-import { Link, NavLink } from 'react-router-dom'
-import { profile, nav } from '../data/content.js'
+import { useState } from "react";
+import { Link, NavLink } from "react-router-dom";
+import { profile, nav } from "../data/content.js";
 
 export default function Header() {
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(false);
 
   const linkClass = ({ isActive }) =>
     [
-      'text-xs font-semibold uppercase tracking-[0.08em] transition-colors',
+      "text-xs font-semibold uppercase tracking-[0.08em] transition-colors",
       isActive
-        ? 'text-on-surface underline decoration-primary decoration-2 underline-offset-[6px]'
-        : 'text-on-surface-variant hover:text-on-surface',
-    ].join(' ')
+        ? "text-on-surface underline decoration-primary decoration-2 underline-offset-[6px]"
+        : "text-on-surface-variant hover:text-on-surface",
+    ].join(" ");
 
   return (
     <header className="sticky top-0 z-50 border-b border-outline-variant/30 bg-surface/85 backdrop-blur-md">
@@ -65,9 +65,9 @@ export default function Header() {
                 onClick={() => setOpen(false)}
                 className={({ isActive }) =>
                   [
-                    'py-2 text-sm font-semibold uppercase tracking-[0.08em]',
-                    isActive ? 'text-primary' : 'text-on-surface-variant',
-                  ].join(' ')
+                    "py-2 text-sm font-semibold uppercase tracking-[0.08em]",
+                    isActive ? "text-primary" : "text-on-surface-variant",
+                  ].join(" ")
                 }
               >
                 {item.label}
@@ -77,5 +77,5 @@ export default function Header() {
         </nav>
       )}
     </header>
-  )
+  );
 }
