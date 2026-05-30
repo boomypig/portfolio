@@ -13,7 +13,7 @@ export default function Contact() {
       </h1>
       <p className="mt-8 max-w-md text-on-surface-variant">
         I'm currently open to internships and new opportunities — happy to talk
-        through technical challenges or just connect.
+        through possible collaborations or just connect.
       </p>
 
       <a
