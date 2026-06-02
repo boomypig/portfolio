@@ -7,7 +7,7 @@ export default function Expertise() {
     <>
       <section className="shell pt-20 pb-15 md:pt-15">
         <h1 className="editorial max-w-3xl text-5xl leading-[1.1] text-on-surface md:text-4xl">
-          A chronicle of my technical journey the work, the study, and the tools
+          A timeline of my technical journey the work, the study, and the tools
           I reach for.
         </h1>
       </section>
