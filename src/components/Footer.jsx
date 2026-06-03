@@ -35,9 +35,6 @@ export default function Footer() {
               </li>
             ))}
           </ul>
-          <p className="text-xs uppercase tracking-[0.08em] text-outline">
-            © {new Date().getFullYear()} {profile.name}. All rights reserved.
-          </p>
         </div>
       </div>
     </footer>
