@@ -42,8 +42,10 @@ export default function Home() {
           to="/projects"
           className="group relative block overflow-hidden rounded border border-outline-variant/40"
         >
-          <div className="aspect-[16/7] w-full bg-gradient-to-br from-surface-high via-surface-container to-surface-lowest" />
-          <div className="absolute inset-0 flex flex-col justify-end p-8 md:p-12">
+          <div className="aspect-[16/7] w-full">
+            <img src="/images/sec4.png" alt="" className="w-full h-full object-cover object-top" />
+          </div>
+          <div className="absolute inset-0 bg-gradient-to-t from-surface-container/90 via-surface-container/40 to-transparent flex flex-col justify-end p-8 md:p-12">
             <SectionLabel>{featured.category}</SectionLabel>
             <h2 className="editorial mt-3 text-3xl text-on-surface md:text-5xl">
               {featured.title}

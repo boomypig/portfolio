@@ -24,11 +24,17 @@ export default function Projects() {
                 i === 0 ? "sm:col-span-2" : ""
               }`}
             >
-              <div
-                className={`mb-8 rounded bg-gradient-to-br from-surface-high via-surface-container to-surface-lowest ${
-                  i === 0 ? "aspect-[16/6]" : "aspect-[16/9]"
-                }`}
-              />
+              {i === 0 ? (
+                <div className="mb-8 overflow-hidden rounded aspect-[16/6]">
+                  <img
+                    src="/images/sec4.png"
+                    alt="SEC Form-4 Insider Trading Tracker screenshot"
+                    className="w-full h-full object-cover object-top"
+                  />
+                </div>
+              ) : (
+                <div className="mb-8 rounded bg-gradient-to-br from-surface-high via-surface-container to-surface-lowest aspect-[16/9]" />
+              )}
               <SectionLabel>{p.category}</SectionLabel>
               <div className="mt-3 flex items-baseline justify-between gap-4">
                 <h2 className="editorial text-2xl text-on-surface md:text-3xl">
