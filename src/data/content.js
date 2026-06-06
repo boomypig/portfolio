@@ -42,6 +42,7 @@ export const projects = [
     description:
       "Built a React + TypeScript frontend with HttpOnly cookie JWT authentication and hand-built SVG charts for visualizing insider buy/sell activity. Designed a normalized PostgreSQL schema with foreign key relationships across companies, filings, and transactions, and implemented RESTful endpoints with controller/service separation for modularity and scalability. Added filing persistence and update-check logic to cut redundant external API requests.",
     stack: ["React", "TypeScript", "Node.js", "PostgreSQL", "REST API"],
+    image: "/images/sec4.png",
   },
   {
     slug: "spotify-recommender",
@@ -66,6 +67,7 @@ export const projects = [
     description:
       "Developed a full-stack CRUD application with secure authentication and persistent storage. Implemented session-based authentication using bcrypt password hashing and route-level middleware protection, and designed a REST API layer for album search, collection management, and admin database tools. Integrated AWS S3 for scalable media storage and dynamic asset retrieval, with a responsive frontend driven by dynamic filtering and state-driven UI updates.",
     stack: ["Node.js", "Express", "REST API", "AWS S3", "bcrypt"],
+    image: "/images/disclist.png",
   },
 ];
 

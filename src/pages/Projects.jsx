@@ -24,11 +24,11 @@ export default function Projects() {
                 i === 0 ? "sm:col-span-2" : ""
               }`}
             >
-              {i === 0 ? (
+              {p.image ? (
                 <div className="mb-8 overflow-hidden rounded aspect-[16/6]">
                   <img
-                    src="/images/sec4.png"
-                    alt="SEC Form-4 Insider Trading Tracker screenshot"
+                    src={p.image}
+                    alt={`${p.title} screenshot`}
                     className="w-full h-full object-cover object-top"
                   />
                 </div>
