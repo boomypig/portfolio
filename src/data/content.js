@@ -35,6 +35,7 @@ export const projects = [
     slug: "sec-form-4-tracker",
     category: "Full-Stack · Fintech",
     title: "SEC Form-4 Insider Trading Tracker",
+    repo: "https://github.com/boomypig/sec4",
     period: "Jan '26 — May '26",
     summary:
       "A React + TypeScript platform that surfaces insider buy/sell activity from SEC Form-4 filings with custom SVG data visualizations.",
@@ -46,6 +47,7 @@ export const projects = [
     slug: "spotify-recommender",
     category: "Machine Learning",
     title: "Spotify Song Recommendation System",
+    repo: "https://github.com/boomypig/spotifyml",
     period: "Jan '26 — Apr '26",
     summary:
       "A modular ML pipeline classifying ~30,000 Spotify track records with regularized logistic regression and rigorous evaluation.",
@@ -57,6 +59,7 @@ export const projects = [
     slug: "disclist",
     category: "Full-Stack · Web App",
     title: "Disclist Music Management Web App",
+    repo: "https://github.com/boomypig/DiscList",
     period: "Jan '25 — Mar '25",
     summary:
       "A full-stack CRUD app for managing music collections, with secure session auth and AWS S3-backed media storage.",

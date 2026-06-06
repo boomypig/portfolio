@@ -38,7 +38,18 @@ export default function Projects() {
               <SectionLabel>{p.category}</SectionLabel>
               <div className="mt-3 flex items-baseline justify-between gap-4">
                 <h2 className="editorial text-2xl text-on-surface md:text-3xl">
-                  {p.title}
+                  {p.repo ? (
+                    <a
+                      href={p.repo}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="transition-colors hover:text-primary"
+                    >
+                      {p.title}
+                    </a>
+                  ) : (
+                    p.title
+                  )}
                 </h2>
                 <span className="shrink-0 text-xs uppercase tracking-[0.08em] text-outline">
                   {p.period}
