@@ -6,7 +6,7 @@ export const profile = {
   wordmark: "BRYAN LOPEZ",
   title: "Full-Stack Developer",
   tagline: [
-    "I'm a passionate developer with a deep interest in",
+    "I'm a Software developer with a deep interest in",
     " ",
     "technology and all things related to computing.",
   ],
