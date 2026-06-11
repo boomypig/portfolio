@@ -53,7 +53,7 @@ export const projects = [
     summary:
       "A modular ML pipeline classifying ~30,000 Spotify track records with regularized logistic regression and rigorous evaluation.",
     description:
-      "Built a modular machine learning pipeline processing roughly 30,000 Spotify track records, covering preprocessing, feature scaling, and model training. Applied L2-regularized logistic regression with cross-validation and hyperparameter tuning, then evaluated with precision, recall, ROC-AUC, and confusion matrices to analyze classification tradeoffs. Enforced strict train/validation/test separation to prevent data leakage and ensure generalization.",
+      "Built a modular machine learning pipeline processing roughly 30,000 Spotify track records, covering preprocessing, feature scaling, and model training. Applied L2-regularized logistic regression with cross-validation and hyperparameter tuning, then evaluated with precision, recall, ROC-AUC, and confusion matrices to analyze classification tradeoffs.",
     stack: ["Python", "scikit-learn", "pandas", "NumPy"],
   },
   {
