@@ -17,7 +17,9 @@ export default function Home() {
           {profile.tagline[2]}
         </h1>
         <p className="mt-8 max-w-xl text-on-surface-variant">{profile.intro}</p>
-
+        <p className="mt-8 max-w-xl text-on-surface-variant">
+          {profile.shortBio}
+        </p>
         <div className="mt-10 flex flex-wrap gap-4">
           <Link
             to="/projects"
@@ -34,49 +36,38 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="shell pb-24">
-        <h1 className="editorial text-5xl text-on-surface md:text-5xl pb-12">
-          Most Recent Project
-        </h1>
-        <Link
-          to="/projects"
-          className="group relative block overflow-hidden rounded border border-outline-variant/40"
-        >
-          <div className="aspect-[16/7] w-full">
-            <img src="/images/sec4.png" alt="" className="w-full h-full object-cover object-top" />
-          </div>
-          <div className="absolute inset-0 bg-gradient-to-t from-surface-container/90 via-surface-container/40 to-transparent flex flex-col justify-end p-8 md:p-12">
-            <SectionLabel>{featured.category}</SectionLabel>
-            <h2 className="editorial mt-3 text-3xl text-on-surface md:text-5xl">
-              {featured.title}
-            </h2>
-            <p className="mt-3 max-w-lg text-sm text-on-surface-variant">
-              {featured.summary}
-            </p>
-            <div className="mt-5 flex flex-wrap gap-2">
-              {featured.stack.map((s) => (
-                <Tag key={s}>{s}</Tag>
-              ))}
-            </div>
-          </div>
-        </Link>
-      </section>
+      <section className="border-t border-outline-variant/30 pb-24">
+        <div className="shell">
+          <h1 className="editorial text-5xl text-on-surface pt-16 pb-10">
+            Most Recent Project
+          </h1>
 
-      <section className="border-t border-outline-variant/30">
-        <div className="shell grid gap-12 py-16 md:grid-cols-[auto_auto_1fr] md:items-start md:gap-20">
-          {stats.map((s) => (
-            <div key={s.label}>
-              <p className="editorial text-5xl text-on-surface md:text-6xl">
-                {s.value}
-              </p>
-              <p className="mt-3 text-xs font-semibold uppercase tracking-[0.08em] text-on-surface-variant">
-                {s.label}
-              </p>
+          <Link
+            to="/projects"
+            className="group relative block overflow-hidden rounded border border-outline-variant/40"
+          >
+            <div className="aspect-[16/7] w-full">
+              <img
+                src="/images/sec4.png"
+                alt=""
+                className="h-full w-full object-cover object-top"
+              />
             </div>
-          ))}
-          <p className="border-outline-variant/40 text-on-surface-variant md:border-l md:pl-12">
-            {profile.shortBio}
-          </p>
+            <div className="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-surface-container/95 via-surface-container/60 to-transparent p-8 md:p-12">
+              <SectionLabel>{featured.category}</SectionLabel>
+              <h2 className="editorial mt-3 text-3xl text-on-surface md:text-5xl">
+                {featured.title}
+              </h2>
+              <p className="mt-3 max-w-lg text-sm text-on-surface-variant">
+                {featured.summary}
+              </p>
+              <div className="mt-5 flex flex-wrap gap-2">
+                {featured.stack.map((s) => (
+                  <Tag key={s}>{s}</Tag>
+                ))}
+              </div>
+            </div>
+          </Link>
         </div>
       </section>
 

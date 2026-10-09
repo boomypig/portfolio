@@ -9,14 +9,10 @@ export const nav = [
 export const profile = {
   name: "Bryan Lopez Rosales",
   wordmark: "BRYAN LOPEZ",
-  title: "Full-Stack Developer",
-  tagline: [
-    "I'm a Software developer with a deep interest in",
-    " ",
-    "technology and all things related to computing.",
-  ],
+  title: "",
+  tagline: ["I'm always down to build something new!", " ", ""],
   intro:
-    "Over the years, I've been learning by creating variety of personal projects, I've been driven by my passion for learning and exploring new technologies.I'm proficient in full-stack development and in practice to get better with Machine Learning. ",
+    "I'm a software engineer that has been learning by creating variety of personal projects, I've been driven by my passion for learning and exploring new technologies.I'm proficient in full-stack development and in practice to get better with Machine Learning. ",
   shortBio:
     "Graduated with a Bachelors in Computer Science at Utah Tech University and working as an IT Help Desk Technician supporting 5,000+ users. Honors student focused on full-stack engineering and applied machine learning.",
   location: "St. George, UT",
@@ -32,7 +28,6 @@ export const profile = {
 export const stats = [
   { value: "3+", label: "Projects Shipped" },
   { value: "5,000+", label: "Users Supported" },
-  { value: "2026", label: "Graduated" },
 ];
 
 export const projects = [
