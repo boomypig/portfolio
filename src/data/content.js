@@ -1,6 +1,11 @@
 // Real content sourced from Bryan Lopez Rosales' resume.
 // Add more projects to the `projects` array as the portfolio grows.
 
+export const nav = [
+  { label: "About", to: "/" },
+  { label: "Projects", to: "/projects" },
+  { label: "Experience & Skills", to: "/expertise" },
+];
 export const profile = {
   name: "Bryan Lopez Rosales",
   wordmark: "BRYAN LOPEZ",
@@ -11,9 +16,9 @@ export const profile = {
     "technology and all things related to computing.",
   ],
   intro:
-    "Over the years, I've dedicated myself creating variety of personal projects, I've been driven by my passion for learning and exploring new technologies.I'm proficient in full-stack development and in practice to get better with Machine Learning. ",
+    "Over the years, I've been learning by creating variety of personal projects, I've been driven by my passion for learning and exploring new technologies.I'm proficient in full-stack development and in practice to get better with Machine Learning. ",
   shortBio:
-    "Just completed my Computer Science degree at Utah Tech University and working as an IT Help Desk Technician supporting 5,000+ users. Honors student focused on full-stack engineering and applied machine learning.",
+    "Graduated with a Bachelors in Computer Science at Utah Tech University and working as an IT Help Desk Technician supporting 5,000+ users. Honors student focused on full-stack engineering and applied machine learning.",
   location: "St. George, UT",
   email: "brainalexis119@gmail.com",
   phone: "(435) 272-6058",
@@ -73,10 +78,22 @@ export const projects = [
 
 export const experience = [
   {
+    role: "Software Engineer Intern",
+    org: "Planstin Administration",
+    location: "St. George, UT",
+    period: "May '26 - Present",
+    points: [
+      "Mapping Salesforce data into the Plexis claims platform for a company wide migration, covering contacts, group associations, and medical and dental claims.",
+      "Diagnosed a months-long silent failure in a MuleSoft ETL pipeline and recovered ~53,000 records at a 99.3% success rate.",
+      "Profiled field completeness across Salesforce objects to design mappings, fallback logic, and crosswalks for incomplete data.",
+    ],
+    tags: ["Python", "SQL", "Salesforce", "Database Management", "Data"],
+  },
+  {
     role: "IT Help Desk Technician",
     org: "Utah Tech University",
     location: "St. George, UT",
-    period: "Aug '24 — Present",
+    period: "Aug '24 — Aug '26",
     points: [
       "Provided technical support for 5,000+ students, staff, and faculty across Windows, macOS, and mobile platforms.",
       "Diagnosed and resolved software, hardware, and network issues including Canvas, authentication, printing, and wireless connectivity.",
@@ -139,10 +156,17 @@ export const arsenal = [
 export const timeline = [
   {
     status: "Present",
-    title: "B.S. Computer Science — Graduated",
-    detail: "Utah Tech University · President's & Dean's List honors",
+    title: "Software Engineer Intern",
+    detail: "Planstin Administration · Data migration & ETL",
     date: "May 2026",
     current: true,
+  },
+  {
+    status: "Graduated",
+    title: "B.S. Computer Science",
+    detail: "Utah Tech University · President's & Dean's List honors",
+    date: "May 2026",
+    current: false,
   },
   {
     status: "Shipped",
@@ -151,7 +175,7 @@ export const timeline = [
     date: "May 2026",
   },
   {
-    status: "Shipped",
+    status: "Staged",
     title: "Spotify Song Recommendation System",
     detail: "Python · scikit-learn · ~30K records",
     date: "Apr 2026",
@@ -163,21 +187,15 @@ export const timeline = [
     date: "Mar 2025",
   },
   {
-    status: "Role",
+    status: "Joined",
     title: "IT Help Desk Technician",
     detail: "Utah Tech University · supporting 5,000+ users",
-    date: "Aug 2024",
+    date: "Aug 2024 - Aug 2026",
   },
   {
-    status: "Started",
-    title: "Began B.S. Computer Science",
+    status: "Began",
+    title: "B.S. Computer Science",
     detail: "Utah Tech University · St. George, UT",
     date: "Aug 2022",
   },
-];
-
-export const nav = [
-  { label: "About", to: "/" },
-  { label: "Projects", to: "/projects" },
-  { label: "Expertise", to: "/expertise" },
 ];

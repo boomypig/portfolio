@@ -5,7 +5,7 @@ import Tag from "../components/Tag.jsx";
 export default function Projects() {
   return (
     <>
-      <section className="shell pt-20 pb-16 md:pt-28">
+      <section className="shell pt-20 pb-16 md:pt-12">
         <h1 className="editorial text-5xl text-on-surface md:text-6xl">
           Projects
         </h1>

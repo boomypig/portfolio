@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Hanken+Grotesk:wght@400;500;600&display=swap');
-@import 'tailwindcss';
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Hanken+Grotesk:wght@400;500;600&display=swap");
+@import "tailwindcss";
 
 @theme {
   /* ---- Midnight Purple Editorial: color tokens ---- */
@@ -28,8 +28,8 @@
   --color-on-background: #e3e3dd;
 
   /* ---- Typography ---- */
-  --font-serif: 'EB Garamond', Georgia, serif;
-  --font-sans: 'Hanken Grotesk', system-ui, sans-serif;
+  --font-serif: "EB Garamond", Georgia, serif;
+  --font-sans: "Hanken Grotesk", system-ui, sans-serif;
 
   /* ---- Radius (disciplined "soft" 0.25rem) ---- */
   --radius-sm: 0.125rem;
