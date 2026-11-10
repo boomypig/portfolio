@@ -10,11 +10,15 @@ export const profile = {
   name: "Bryan Lopez Rosales",
   wordmark: "BRYAN LOPEZ",
   title: "",
-  tagline: ["I'm always down to build something new!", " ", ""],
+  tagline: ["Who am I??", " ", ""],
   intro:
-    "I'm a software engineer that has been learning by creating variety of personal projects, I've been driven by my passion for learning and exploring new technologies.I'm proficient in full-stack development and in practice to get better with Machine Learning. ",
-  shortBio:
-    "Graduated with a Bachelors in Computer Science at Utah Tech University and working as an IT Help Desk Technician supporting 5,000+ users. Honors student focused on full-stack engineering and applied machine learning.",
+    "HI!! Hello I'm Bryan I'm a software engineer I've been praticing my skills by trying to build a variety of personal projects. A lot of my passion comes from learning and exploring new technologies.I'm proficient in full-stack development and in practice to get better with Machine Learning/AI development. ",
+  // Each entry is shown as its own paragraph under the intro.
+  shortBio: [
+    "I Graduated with a Bachelors in Computer Science at Utah Tech University and working as an IT Help Desk Technician supporting 5,000+ users.",
+    "Whenever I'm not working on something I'll most likely be rock climbing, Playing video games(**COUGH**... Deadlock..), or out watching a movie at the Theater.",
+    "Feel Free to reach out to me and get in Touch!!!",
+  ],
   location: "St. George, UT",
   email: "brainalexis119@gmail.com",
   phone: "(435) 272-6058",
