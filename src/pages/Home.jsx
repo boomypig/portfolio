@@ -9,30 +9,56 @@ export default function Home() {
 
   return (
     <>
-      <section className="shell pt-20 pb-24 md:pt-15 md:pb-22">
-        <SectionLabel>{profile.title}</SectionLabel>
-        <h1 className="editorial mt-6 max-w-4xl text-5xl leading-[1.05] text-on-surface md:text-4xl">
-          {profile.tagline[0]}{" "}
-          <span className="text-primary">{profile.tagline[1]}</span>{" "}
-          {profile.tagline[2]}
-        </h1>
-        <p className="mt-8 max-w-xl text-on-surface-variant">{profile.intro}</p>
-        <p className="mt-8 max-w-xl text-on-surface-variant">
-          {profile.shortBio}
-        </p>
-        <div className="mt-10 flex flex-wrap gap-4">
-          <Link
-            to="/projects"
-            className="rounded bg-primary-container px-6 py-3 text-xs font-semibold uppercase tracking-[0.08em] text-on-primary transition-opacity hover:opacity-90"
-          >
-            View Projects
-          </Link>
-          <Link
-            to="/contact"
-            className="rounded border border-outline px-6 py-3 text-xs font-semibold uppercase tracking-[0.08em] text-on-surface transition-colors hover:border-on-surface"
-          >
-            Get in Touch
-          </Link>
+      <section className="shell items-start pt-20 pb-24 md:grid md:grid-cols-[1fr_300px] md:gap-12 md:pt-15 md:pb-22">
+        <div>
+          <SectionLabel>{profile.title}</SectionLabel>
+          <h1 className="editorial mt-6 max-w-4xl text-5xl leading-[1.05] text-on-surface md:text-4xl">
+            {profile.tagline[0]}{" "}
+            <span className="text-primary">{profile.tagline[1]}</span>{" "}
+            {profile.tagline[2]}
+          </h1>
+          <p className="mt-8 max-w-xl text-on-surface-variant">
+            {profile.intro}
+          </p>
+          {profile.shortBio.map((paragraph) => (
+            <p
+              key={paragraph}
+              className="mt-5 max-w-xl text-on-surface-variant"
+            >
+              {paragraph}
+            </p>
+          ))}
+          <div className="mt-10 flex flex-wrap gap-4">
+            <Link
+              to="/projects"
+              className="rounded bg-primary-container px-6 py-3 text-xs font-semibold uppercase tracking-[0.08em] text-on-primary transition-opacity hover:opacity-90"
+            >
+              View Projects
+            </Link>
+            <Link
+              to="/contact"
+              className="rounded border border-outline px-6 py-3 text-xs font-semibold uppercase tracking-[0.08em] text-on-surface transition-colors hover:border-on-surface"
+            >
+              Get in Touch
+            </Link>
+          </div>
+        </div>
+
+        {/* Graduation photo; fades to the hiking photo on hover or focus. */}
+        <div
+          tabIndex={0}
+          className="group relative mx-auto mt-14 aspect-[3/4] w-full max-w-[300px] overflow-hidden rounded border border-outline-variant/40 md:mt-6"
+        >
+          <img
+            src="/images/bryan-graduation.webp"
+            alt="Bryan smiling and holding a diploma at graduation"
+            className="h-full w-full object-cover object-[50%_58%]"
+          />
+          <img
+            src="/images/bryan-hiking.webp"
+            alt="Bryan hiking through a mountain meadow"
+            className="absolute inset-0 h-full w-full object-cover opacity-0 transition-opacity duration-500 group-hover:opacity-100 group-focus:opacity-100"
+          />
         </div>
       </section>
 
