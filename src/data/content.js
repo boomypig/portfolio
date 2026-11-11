@@ -15,7 +15,7 @@ export const profile = {
     "HI!! Hello I'm Bryan I'm a software engineer I've been praticing my skills by trying to build a variety of personal projects. A lot of my passion comes from learning and exploring new technologies.I'm proficient in full-stack development and in practice to get better with Machine Learning/AI development. ",
   // Each entry is shown as its own paragraph under the intro.
   shortBio: [
-    "I Graduated with a Bachelors in Computer Science at Utah Tech University and working as an IT Help Desk Technician supporting 5,000+ users.",
+    "I Graduated with a Bachelors in Computer Science at Utah Tech University and I'm currently working as a Software Engineer Intern at Planstin Administration.",
     "Whenever I'm not working on something I'll most likely be rock climbing, Playing video games(**COUGH**... Deadlock..), or out watching a movie at the Theater.",
     "Feel Free to reach out to me and get in Touch!!!",
   ],
